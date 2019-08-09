@@ -18,7 +18,10 @@ public class MainActivity extends AppCompatActivity {
     }
 }
 
- /**
+
+![image text](https://github.com/xuxinjiang/Netease_Arouter/blob/master/gif/test1.png)
+
+    /**
      * 通过Java自动生成代码
      *
      * @param set
