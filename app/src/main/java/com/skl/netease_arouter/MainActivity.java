@@ -9,7 +9,7 @@ import com.skl.annotations.BindPath;
 import com.skl.arouter.ARouter;
 import com.skl.arouter.IRouter;
 
-
+//自定义注解路径
 @BindPath("main/main")
 public class MainActivity extends AppCompatActivity {
 
@@ -20,6 +20,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
 
+    //跳转代码
     public void jumpActivity(View view) {
         ARouter.getInstance().jumpActivity("login/login", null);
     }

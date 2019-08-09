@@ -1,16 +1,11 @@
 package com.skl.arouter;
 
 
-import android.annotation.SuppressLint;
 import android.app.Activity;
 import android.app.Application;
 import android.content.Context;
 import android.content.Intent;
-import android.content.pm.PackageManager;
 import android.os.Bundle;
-import android.util.Log;
-
-import java.io.IOException;
 import java.util.ArrayList;
 import java.util.Enumeration;
 import java.util.HashMap;
@@ -28,19 +23,16 @@ public class ARouter {
     private Map<String, Class<? extends Activity>> activityList;
     private Context context;
 
-    @SuppressLint("StaticFieldLeak")
-    private static final ARouter INSTANCE = new ARouter();
-
     public ARouter() {
         activityList = new HashMap<>();
     }
 
-//    private static class Holder {
-//        private static final ARouter INSTANCE = new ARouter();
-//    }
+    private static class Holder {
+        private static final ARouter INSTANCE = new ARouter();
+    }
 
     public static ARouter getInstance() {
-        return INSTANCE;
+        return Holder.INSTANCE;
     }
 
 

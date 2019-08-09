@@ -30,7 +30,6 @@ public class AnnotationCompiler extends AbstractProcessor {
     //生成文件的对象
     private Filer filer;
 
-
     @Override
     public synchronized void init(ProcessingEnvironment processingEnvironment) {
         super.init(processingEnvironment);
@@ -61,7 +60,7 @@ public class AnnotationCompiler extends AbstractProcessor {
     }
 
     /**
-     * 自动生成代码
+     * 通过Java自动生成代码
      *
      * @param set
      * @param roundEnvironment
