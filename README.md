@@ -18,10 +18,12 @@ public class MainActivity extends AppCompatActivity {
     }
 }
 
-
+```
 ![image text](https://github.com/xuxinjiang/Netease_Arouter/blob/master/gif/test1.png)
 
-    /**
+## 通过指定的路由自动创建指定的路径类方法《核心代码》
+```
+/**
      * 通过Java自动生成代码
      *
      * @param set
@@ -81,8 +83,11 @@ public class MainActivity extends AppCompatActivity {
         }
         return false;
     }
-
+    
 ```
+
+
+
 # 演示（请star支持）
 
 ![image text](https://github.com/xuxinjiang/Netease_Arouter/blob/master/gif/netease.gif)
